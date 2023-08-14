@@ -3,6 +3,7 @@ import {HttpClient} from '@angular/common/http';
 import { SellerSignUp } from '../models/seller-sign-up';
 import { BehaviorSubject } from 'rxjs';
 import { Router } from '@angular/router';
+import { Login } from '../models/login';
 
 @Injectable({
   providedIn: 'root'
@@ -26,5 +27,20 @@ export class SellerService {
       this.isSellerLoggedIn.next(true);
       this.router.navigate(['seller-home']);
     }
+  }
+
+  userLogin(data : Login) : boolean{
+    let isLoggedIn = false
+    this.http.get(`http://localhost:3000/seller?email=${data.email}&password=${data.password}`,{observe : 'response'}).subscribe((result : any)=>{
+      if(result && result.body && result.body.length){
+        localStorage.setItem('seller',JSON.stringify(result.body));
+        this.router.navigate(['seller-home']);
+        isLoggedIn = true;
+      }
+      else{
+        console.warn("Access Denied!");
+      }
+    });
+    return isLoggedIn;
   }
 }

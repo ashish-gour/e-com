@@ -23,41 +23,6 @@
       "email": "dom@seller.com",
       "password": "1234",
       "id": 4
-    },
-    {
-      "name": "Doctor",
-      "email": "doc@seller.com",
-      "password": "1234",
-      "id": 5
-    },
-    {
-      "name": "A2",
-      "email": "as",
-      "password": "1234",
-      "id": 6
-    },
-    {
-      "name": "Test",
-      "email": "test@gmail.com",
-      "password": "tttt",
-      "id": 7
-    },
-    {
-      "email": "",
-      "password": "",
-      "id": 8
-    },
-    {
-      "name": "",
-      "email": "",
-      "password": "",
-      "id": 9
-    },
-    {
-      "name": "asdfg",
-      "email": "sdfg",
-      "password": "shyugf",
-      "id": 10
     }
   ]
 }

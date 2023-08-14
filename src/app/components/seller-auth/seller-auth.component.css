@@ -19,3 +19,7 @@
     cursor: pointer;
     color: blueviolet;
 }
+
+.auth-error-message, .validation-message{
+    color: red;
+}

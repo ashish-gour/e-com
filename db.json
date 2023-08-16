@@ -30,5 +30,16 @@
       "password": "1234",
       "id": 5
     }
+  ],
+  "product": [
+    {
+      "p_name": "Pen",
+      "p_price": "200",
+      "p_color": "Black",
+      "p_category": "Education",
+      "p_description": "This pen is used for signature purpose only.",
+      "p_image_url": "https://www.pen.com",
+      "id": 1
+    }
   ]
 }

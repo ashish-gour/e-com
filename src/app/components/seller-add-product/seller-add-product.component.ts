@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ProductService } from 'src/app/services/product.service';
 
 @Component({
   selector: 'app-seller-add-product',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class SellerAddProductComponent {
 
+  constructor(private productService : ProductService){}
+
+  addNewProduct(product : object) : void {
+    this.productService.addProduct(product);
+  }
 }

@@ -28,8 +28,9 @@ export class SellerAuthComponent {
       this.validationMessage = 'Email or Name or Password should not be empty!';
     }
   }
-  logIn(data : Login) : void{
-    let result = this.sellerService.userLogin(data);
+  
+  async logIn(data : Login) : Promise<void>{
+    let result = await this.sellerService.userLogin(data);
     if(!result){
       this.authErrorMessage = 'Email or Password is incorroct!';
     }

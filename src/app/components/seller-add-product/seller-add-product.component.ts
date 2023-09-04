@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Product } from 'src/app/models/product';
 import { ProductService } from 'src/app/services/product.service';
 
 @Component({
@@ -7,10 +8,15 @@ import { ProductService } from 'src/app/services/product.service';
   styleUrls: ['./seller-add-product.component.css']
 })
 export class SellerAddProductComponent {
-
+  addProductMessage :string | undefined;
   constructor(private productService : ProductService){}
-
-  addNewProduct(product : object) : void {
-    this.productService.addProduct(product);
+  addNewProduct(product : Product) : void {
+    this.productService.addProduct(product).subscribe((result : any)=>{
+      if(result)
+      {
+        this.addProductMessage = 'Product added successfully!';
+        setTimeout(()=> this.addProductMessage = undefined, 5000);
+      }
+    });
   }
 }

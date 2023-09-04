@@ -1,1 +1,29 @@
-<p>seller-home works!</p>
+<div class="products">
+    <h1>Product List</h1>
+    <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">SNO</th>
+            <th scope="col">Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Color</th>
+            <th scope="col">Category</th>
+            <th scope="col">Description</th>
+            <th scope="col">Image</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let product of products">
+            <th scope="row">{{product.id}}</th>
+            <td>{{product.p_name}}</td>
+            <td>{{product.p_price}}</td>
+            <td>{{product.p_color}}</td>
+            <td>{{product.p_category}}</td>
+            <td>{{product.p_description}}</td>
+            <td><img class="table-product-image" [src]="(product.p_image_url)" alt="no image"></td>
+            <td><i (click)="editProduct(product)" class="bi bi-pencil-square p-5 btn-edit"></i></td>
+          </tr>
+        </tbody>
+      </table>
+</div>

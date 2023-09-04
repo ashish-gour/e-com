@@ -31,15 +31,42 @@
       "id": 5
     }
   ],
-  "product": [
+  "products": [
     {
-      "p_name": "Pen",
+      "id": 1,
+      "p_name": "Pen1",
       "p_price": "200",
       "p_color": "Black",
       "p_category": "Education",
-      "p_description": "This pen is used for signature purpose only.",
-      "p_image_url": "https://www.pen.com",
-      "id": 1
+      "p_description": "This pen is used for signature purpose only. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem labore molestiae repellat atque distinctio consectetur, ipsa error modi placeat facere necessitatibus quos magni aut ut sit ex, omnis at odit?",
+      "p_image_url": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSGufNxChfYJ9iVD6Y5tC6ReeQqpGZH7XqzKmVsVSibclKFvCEP1w5jOEKkj8v7CIA1WGrm2XvNNp064ocVoC5asFkLxyPszhKavz5MTDCddztttW-8H3Tv"
+    },
+    {
+      "p_name": "iPhone 13",
+      "p_price": "35000",
+      "p_color": "Black",
+      "p_category": "Smart Phone",
+      "p_description": "This product is very expensive, pls don't buy it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem labore molestiae repellat atque distinctio consectetur, ipsa error modi placeat facere necessitatibus quos magni aut ut sit ex, omnis at odit?",
+      "p_image_url": "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1664009609/Croma%20Assets/Communication/Mobiles/Images/243463_0_qtsxpd.png?tr=w-480",
+      "id": 2
+    },
+    {
+      "p_name": "iPhone 14",
+      "p_price": "70000",
+      "p_color": "Black",
+      "p_category": "Smart Phone",
+      "p_description": "This Product is very expensive, think millions of time before buying it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem labore molestiae repellat atque distinctio consectetur, ipsa error modi placeat facere necessitatibus quos magni aut ut sit ex, omnis at odit?",
+      "p_image_url": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-14-storage-select-202209-6-1inch-blue?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1660691647109",
+      "id": 3
+    },
+    {
+      "p_name": "Shailja's Lappy 2.0",
+      "p_price": "10000000000000000",
+      "p_color": "Rose Gold",
+      "p_category": "Smart Computer",
+      "p_description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione quidem beatae voluptatem magni sint veritatis mollitia minima deleniti quis, saepe reprehenderit id eum aspernatur quod ipsa. Quod temporibus magni obcaecati.\n",
+      "p_image_url": "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1685966374/Croma%20Assets/Computers%20Peripherals/Laptop/Images/256711_umnwok.png?tr=w-480",
+      "id": 4
     }
   ]
 }

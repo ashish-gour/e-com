@@ -5,12 +5,14 @@ import { SellerAuthComponent } from './components/seller-auth/seller-auth.compon
 import { SellerHomeComponent } from './components/seller-home/seller-home.component';
 import { sellerAuthGuard } from './guards/seller-auth.guard';
 import { SellerAddProductComponent } from './components/seller-add-product/seller-add-product.component';
+import { SellerEditProductComponent } from './components/seller-edit-product/seller-edit-product.component';
 
 const routes: Routes = [
   {path : '', component : HomeComponent},
   {path : 'seller-auth', component : SellerAuthComponent},
   {path : 'seller-home', component : SellerHomeComponent, canActivate : [sellerAuthGuard]},
   {path : 'seller-add-product', component : SellerAddProductComponent, canActivate : [sellerAuthGuard]},
+  {path : 'seller-edit-product', component : SellerEditProductComponent, canActivate : [sellerAuthGuard]},
 ];
 
 @NgModule({

@@ -67,6 +67,24 @@
       "p_description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione quidem beatae voluptatem magni sint veritatis mollitia minima deleniti quis, saepe reprehenderit id eum aspernatur quod ipsa. Quod temporibus magni obcaecati.\n",
       "p_image_url": "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1685966374/Croma%20Assets/Computers%20Peripherals/Laptop/Images/256711_umnwok.png?tr=w-480",
       "id": 4
+    },
+    {
+      "p_name": "Mi24",
+      "p_price": "30000",
+      "p_color": "Black",
+      "p_category": "Smart Phone",
+      "p_description": "NA",
+      "p_image_url": "https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/l/8/d/-original-imagqadpnygfnn2v.jpeg?q=70",
+      "id": 5
+    },
+    {
+      "id": 6,
+      "p_name": "No data",
+      "p_price": "",
+      "p_color": "",
+      "p_category": "",
+      "p_description": "",
+      "p_image_url": ""
     }
   ]
 }
